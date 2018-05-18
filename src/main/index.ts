@@ -1,5 +1,6 @@
 
 import {Validation, ValidationItem, ValidationType} from "./model/validation";
+import ValidationError from "./model/validation-error";
 import validate from "./validate/index";
 import transform from "./transform";
 
@@ -9,5 +10,7 @@ function validateAndTransform (validation: Validation, model: object): object {
 }
 
 export {
-    Validation, ValidationType, ValidationItem, validate, transform, validateAndTransform
+    Validation, ValidationType, ValidationItem,
+    validate, transform, validateAndTransform,
+    ValidationError
 };

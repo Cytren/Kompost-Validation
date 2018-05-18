@@ -2,7 +2,7 @@
 export default class ValidationError extends Error {
 
     constructor (readonly value: any) {
-        super(`Validation Error\n${JSON.stringify(value, undefined, '  ')}`);
+        super("Validation Error");
         Object.setPrototypeOf(this, ValidationError.prototype);
     }
 }
